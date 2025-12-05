@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple JS Quiz</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-900 h-screen flex items-center justify-center">
+   <div class="bg-gray-800 p-6 w-[400px] rounded-2xl shadow-2xl space-y-6">
+        <div class="text-gray-300">
+            <h2 class="text-xl font-semibold">Simple JS Quiz</h2>
+            <p id="question-count" class="text-sm">Question 1 of 3</p>
+        </div>
+        <h2 id="question-text" class="text-gray-300 text-lg">
+            Loading question...
+        </h2>
+        <div id="options-container" class="space-y-2 text-gray-300">
+        </div>
+        <button id="next-btn"
+            class="hover:scale-105 bg-green-500 text-white duration-300 cursor-pointer rounded-xl p-2 flex justify-start ml-75">
+            Next
+        </button>
+</div>
+<script src="quizjs.js"></script>
+</body>
+</html>
